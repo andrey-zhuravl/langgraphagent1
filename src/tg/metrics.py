@@ -1,6 +1,6 @@
 import uuid
 
-from src.langgraphagent1.metrics.service import MetricsService
+from src.lang_graph_agent.metrics.service import MetricsService
 
 metrics = MetricsService()
 

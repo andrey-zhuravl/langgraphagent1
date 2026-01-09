@@ -3,9 +3,9 @@ from __future__ import annotations
 import json
 from langchain_core.messages import SystemMessage
 from langgraph.graph import END
-from src.langgraphagent1.settings import Settings
-from src.langgraphagent1.state import AgentState
-from src.langgraphagent1.utils import safe_call_tool
+from src.lang_graph_agent.settings import Settings
+from src.lang_graph_agent.state import AgentState
+from src.lang_graph_agent.utils import safe_call_tool
 
 def parse_tool_calls(text: str) -> list[dict]:
     lines = (text or "").splitlines()

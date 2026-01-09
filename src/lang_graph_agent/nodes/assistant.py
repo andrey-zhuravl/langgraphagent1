@@ -3,14 +3,14 @@ from __future__ import annotations
 from typing import Any
 from langchain_core.messages import SystemMessage
 from langchain_openai import ChatOpenAI
-from src.langgraphagent1 import filesystem_utils
-from src.langgraphagent1.mcp_tool.mcp_bridge import (
+from src.lang_graph_agent import filesystem_utils
+from src.lang_graph_agent.mcp_tool.mcp_bridge import (
     render_tools_for_prompt, )
-from src.langgraphagent1.metrics.extract import extract_tokens
-from src.langgraphagent1.prompts.assistant_prompt import get_assistant_prompt, get_assistant_prompt_final
-from src.langgraphagent1.settings import Settings
-from src.langgraphagent1.state import AgentState
-from src.langgraphagent1.utils import safe_invoke
+from src.lang_graph_agent.metrics.extract import extract_tokens
+from src.lang_graph_agent.prompts.assistant_prompt import get_assistant_prompt, get_assistant_prompt_final
+from src.lang_graph_agent.settings import Settings
+from src.lang_graph_agent.state import AgentState
+from src.lang_graph_agent.utils import safe_invoke
 
 
 def create_assistant_node(llm: ChatOpenAI,

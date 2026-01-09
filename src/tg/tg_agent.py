@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
-from src.langgraphagent1.agent import run_once
-from src.langgraphagent1.metrics.service import MetricsService
+from src.lang_graph_agent.agent import run_once
+from src.lang_graph_agent.metrics.service import MetricsService
 from src.tg.metrics import create_agent_task, finalize_task_and_usage
 
 metrics = MetricsService()

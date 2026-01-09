@@ -2,17 +2,17 @@ from __future__ import annotations
 
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph, START, END
-from src.langgraphagent1.conditional_edges.route_after_assistant import create_route_after_assistant_node
-from src.langgraphagent1.mcp_tool.mcp_bridge import (
+from src.lang_graph_agent.conditional_edges.route_after_assistant import create_route_after_assistant_node
+from src.lang_graph_agent.mcp_tool.mcp_bridge import (
     render_tools_for_prompt,
     render_tools_name_for_prompt,
     safe_list_tools,
 )
-from src.langgraphagent1.nodes.assistant import create_assistant_node
-from src.langgraphagent1.nodes.planer import create_planner_node
-from src.langgraphagent1.nodes.tool_runner import create_tool_runner_node
-from src.langgraphagent1.settings import load_settings, _parse_allowed
-from src.langgraphagent1.state import AgentState
+from src.lang_graph_agent.nodes.assistant import create_assistant_node
+from src.lang_graph_agent.nodes.planer import create_planner_node
+from src.lang_graph_agent.nodes.tool_runner import create_tool_runner_node
+from src.lang_graph_agent.settings import load_settings, _parse_allowed
+from src.lang_graph_agent.state import AgentState
 
 async def build_graph(debug_dir: str, checkpointer) -> callable:
     s = load_settings()

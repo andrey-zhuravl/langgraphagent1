@@ -2,7 +2,7 @@ import asyncio
 import sys
 from dotenv import load_dotenv
 
-from src.langgraphagent1.agent import run_once
+from src.lang_graph_agent.agent import run_once
 
 task_9_14 =  """В файле D:\\temp\\kodex3\\story\\filesystem.py лежит код части MCP-tool сервера. 
  тесты для него и сохрани в D:\\temp\\kodex3\\story\\test1.py Используй create_file

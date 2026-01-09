@@ -4,7 +4,7 @@ import uuid
 from sqlalchemy import update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.langgraphagent1.metrics.models import Task, TokenUsage
+from src.lang_graph_agent.metrics.models import Task, TokenUsage
 
 
 class TaskDao:

@@ -3,9 +3,9 @@ from __future__ import annotations
 import uuid
 from typing import Any
 
-from src.langgraphagent1.metrics.dao import TaskDao, TokenUsageDao
-from src.langgraphagent1.metrics.db import SESSION_FACTORY
-from src.langgraphagent1.metrics.models import TokenUsage
+from src.lang_graph_agent.metrics.dao import TaskDao, TokenUsageDao
+from src.lang_graph_agent.metrics.db import SESSION_FACTORY
+from src.lang_graph_agent.metrics.models import TokenUsage
 
 
 class MetricsService:

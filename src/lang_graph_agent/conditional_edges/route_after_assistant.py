@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from langgraph.graph import END
 
-from src.langgraphagent1.state import AgentState
+from src.lang_graph_agent.state import AgentState
 
 
 def create_route_after_assistant_node():

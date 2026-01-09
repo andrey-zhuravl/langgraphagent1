@@ -12,7 +12,7 @@ from langchain_openai import ChatOpenAI
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 from openai import APIConnectionError
 
-from src.langgraphagent1.mcp_tool.mcp_bridge import (
+from src.lang_graph_agent.mcp_tool.mcp_bridge import (
     call_tool_sync,
 )
 

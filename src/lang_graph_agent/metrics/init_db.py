@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 import asyncio
-from src.langgraphagent1.metrics.db import ENGINE
-from src.langgraphagent1.metrics.models import Base
+from src.lang_graph_agent.metrics.db import ENGINE
+from src.lang_graph_agent.metrics.models import Base
 from dotenv import load_dotenv
 load_dotenv()
 

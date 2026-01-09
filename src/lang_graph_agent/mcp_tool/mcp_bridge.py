@@ -3,7 +3,7 @@ from typing import Any
 from mcp.types import Tool as McpTool
 from pydantic import BaseModel
 from tenacity import retry, stop_after_attempt, wait_exponential
-from src.langgraphagent1.mcp_tool.mcp_client import McpStreamClient
+from src.lang_graph_agent.mcp_tool.mcp_client import McpStreamClient
 
 
 class McpToolAdapter(BaseModel):
